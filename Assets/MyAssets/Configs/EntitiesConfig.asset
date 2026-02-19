@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a76a8cb2b9e44358efa6388d580a698, type: 3}
+  m_Name: EntitiesConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Zoo.Application.Configs.EntitiesConfigSO
+  _entities:
+  - _id: snake
+    _movementType:
+      rid: 8314320413641408573
+    _behaviourType:
+      rid: 8314320413641408570
+    _type:
+      rid: 8314320413641408577
+  - _id: frog
+    _movementType:
+      rid: 8314320413641408579
+    _behaviourType:
+      rid: 8314320413641408570
+    _type:
+      rid: 8314320413641408578
+  references:
+    version: 2
+    RefIds:
+    - rid: 8314320413641408570
+      type: {class: WanderBehaviourType, ns: Zoo.Gameplay.Entities.Behaviours, asm: Assembly-CSharp}
+      data: 
+    - rid: 8314320413641408573
+      type: {class: LinearMovementType, ns: Zoo.Gameplay.Movements, asm: Assembly-CSharp}
+      data:
+        _parameters:
+          Speed: 5
+    - rid: 8314320413641408577
+      type: {class: Predator, ns: Zoo.Gameplay.Entities, asm: Assembly-CSharp}
+      data: 
+    - rid: 8314320413641408578
+      type: {class: Prey, ns: Zoo.Gameplay.Entities, asm: Assembly-CSharp}
+      data: 
+    - rid: 8314320413641408579
+      type: {class: JumpMovementType, ns: Zoo.Gameplay.Movements, asm: Assembly-CSharp}
+      data:
+        _parameters:
+          JumpSpeed: 4
+          JumpHeight: 1.5
+          MaxJumpLength: 2.5
