@@ -37,7 +37,7 @@ MonoBehaviour:
       type: {class: LinearMovementType, ns: Zoo.Gameplay.Movements, asm: Assembly-CSharp}
       data:
         _parameters:
-          Speed: 5
+          Speed: 3
     - rid: 8314320413641408577
       type: {class: Predator, ns: Zoo.Gameplay.Entities, asm: Assembly-CSharp}
       data: 
@@ -51,3 +51,4 @@ MonoBehaviour:
           JumpSpeed: 4
           JumpHeight: 1.5
           MaxJumpLength: 2.5
+          DelayBetweenJumps: 0.5

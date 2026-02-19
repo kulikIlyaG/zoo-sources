@@ -33,6 +33,12 @@ namespace Zoo.Gameplay.Movements
                     return;
                 }
 
+                float delayBetweenJumps = Mathf.Max(0f, Parameters.DelayBetweenJumps);
+                if (delayBetweenJumps > 0f)
+                {
+                    await UniTask.Delay(TimeSpan.FromSeconds(delayBetweenJumps), cancellationToken: cancellationToken);
+                }
+
                 float normalized = (float)jumpIndex / jumpsCount;
                 Vector3 jumpEnd = Vector3.Lerp(start, end, normalized);
                 await PerformJumpAsync(jumpStart, jumpEnd, cancellationToken);
@@ -83,6 +89,7 @@ namespace Zoo.Gameplay.Movements
         public float JumpSpeed = 1f;
         public float JumpHeight = 0.75f;
         public float MaxJumpLength = 0.75f;
+        public float DelayBetweenJumps = 0.5f;
     }
     
     [Serializable]
