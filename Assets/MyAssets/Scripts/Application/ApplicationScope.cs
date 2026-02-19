@@ -1,13 +1,11 @@
 using System;
 using System.Collections.Generic;
 using IKGTools.Services.Timers;
-using MyAssets.Scripts.Application.Configs.Game;
 using UnityEngine;
 using Utilities.AssetsProvider;
 using Utilities.VContainerExtensions;
 using VContainer;
 using Zoo.Application.Configs;
-using Zoo.Application.Configs.Game;
 
 namespace Zoo.Application
 {
@@ -15,7 +13,7 @@ namespace Zoo.Application
     {
         [Header("Configs")]
         [SerializeField] private EntitiesConfigSO _entitiesConfig;
-        [SerializeField] private SpawnEntitiesConfigSo _spawnEntitiesConfig;
+        [SerializeField] private SpawnEntitiesConfigSO _spawnEntitiesConfig;
         [SerializeField] private GameplayVFXsConfigSO _gameplayVFXsConfig;
         
         protected override void ConfigureProcess(IContainerBuilder builder)

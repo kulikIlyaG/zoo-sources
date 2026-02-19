@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 
 namespace Zoo.Gameplay.Entities
 {
-    interface IEntitiesSpawnSystem
+    public interface IEntitiesSpawnSystem
     {
         void StartSpawning();
     }

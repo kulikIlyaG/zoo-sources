@@ -23,7 +23,6 @@ namespace Zoo.Gameplay.Entities
 
             if (ValidateRepeatedContact(contactData))
             {
-                Debug.Log("Found dublicate contact");
                 return;
             }
             

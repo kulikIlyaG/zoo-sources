@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c17851b5ee4a8186af3ab978761430, type: 3}
   m_Name: SpawnEntitiesConfig
   m_EditorClassIdentifier: Assembly-CSharp::Zoo.Application.Configs.Game.GameConfigSO
-  _spawnEntitiesRateMin: 0.5
-  _spawnEntitiesRateMax: 1
+  _spawnEntitiesRateMin: 1
+  _spawnEntitiesRateMax: 2

@@ -1,5 +1,4 @@
 using IKGTools.VFXs;
-using MyAssets.Scripts.Application.Configs.Game;
 using UnityEngine;
 using Zoo.Application.Configs;
 using Zoo.Gameplay.Session;

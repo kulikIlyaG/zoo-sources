@@ -41,7 +41,7 @@ namespace Zoo.Gameplay
 
         private void ConfigureUI(IContainerBuilder builder)
         {
-            //Это все по хорошему не стоит делать, лучше создавать окна по запросу. Но тут я решил сэкономить время
+            //"This shouldn't really be done this way it's better to create windows on request. But here I decided to save time."
             builder.RegisterInstance(_mainWindowView);
             builder.Register<MainWindowModel>(Lifetime.Singleton);
             builder.Register<MainWindowPresenter>(Lifetime.Singleton).As<WindowPresenter>();

@@ -1,7 +1,6 @@
 using IKGTools.VFXs;
-using Zoo.Application.Configs;
 
-namespace MyAssets.Scripts.Application.Configs.Game
+namespace Zoo.Application.Configs
 {
     public interface IGameplayVFXsConfig : IConfig
     {
